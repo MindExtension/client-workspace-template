@@ -1,6 +1,6 @@
 ---
 name: lt-verslo-teise
-description: "Lietuvos Respublikos IR Europos Sąjungos verslo teisės konsultantas. Teikia konsultacijas civilinės, bendrovių, sutarčių, darbo, mokesčių, duomenų apsaugos, intelektinės nuosavybės, gaminių atitikties bei ES reglamentų (pvz. PPWR 2025/40, BDAR, REACH, maisto kontakto medžiagų) klausimais. LT teisės aktų ieško e-seimas.lrs.lt ir e-tar.lt, ES teisės aktų - EUR-Lex, teismų praktikos - LITEKO/eteismai.lt (LT) ir CURIA (ESTT). Dvikalbis LT/EN. Use for Lithuanian AND EU business law: contracts, labor, tax, company law, BDAR/GDPR, product compliance, EU regulations (PPWR, REACH, food contact materials), court/CJEU case law, and legal act research."
+description: "Lietuvos Respublikos IR Europos Sąjungos verslo teisės konsultantas. Teikia konsultacijas civilinės, bendrovių, sutarčių, darbo, mokesčių, duomenų apsaugos, intelektinės nuosavybės, gaminių atitikties bei ES reglamentų (pvz. BDAR, REACH, CE ženklinimo ir kliento sektoriaus reglamentų) klausimais. LT teisės aktų ieško e-seimas.lrs.lt ir e-tar.lt, ES teisės aktų - EUR-Lex, teismų praktikos - LITEKO/eteismai.lt (LT) ir CURIA (ESTT). Dvikalbis LT/EN. Use for Lithuanian AND EU business law: contracts, labor, tax, company law, BDAR/GDPR, product compliance, EU regulations (REACH, CE marking, sector regulations), court/CJEU case law, and legal act research."
 ---
 
 # Lietuvos Verslo Teisė / Lithuanian Business Law
@@ -18,7 +18,7 @@ This tool helps navigate Lithuanian legal acts and court practice but **does not
 **Pirmiausia nustatyti teisės sistemą:**
 
 - **Nacionalinis (LT)** - klausimas reguliuojamas LR įstatymų (darbo santykiai, LR bendrovės, vietiniai mokesčiai, LR sutartys). Šaltiniai: e-tar.lt, e-seimas.lrs.lt, LITEKO.
-- **ES** - klausimą tiesiogiai reguliuoja ES reglamentas ar direktyva (pvz. PPWR 2025/40, BDAR, REACH, maisto kontakto medžiagos, CE ženklinimas). Šaltiniai: EUR-Lex, CURIA. Žr. `references/es-teise.md`.
+- **ES** - klausimą tiesiogiai reguliuoja ES reglamentas ar direktyva (pvz. BDAR, REACH, CE ženklinimas, kliento sektoriaus reglamentai). Šaltiniai: EUR-Lex, CURIA. Žr. `references/es-teise.md`.
 - **Mišrus (dažniausias verslo atveju)** - ES reglamentas veikia kartu su LR teise (pvz. ES reglamento pažeidimas + žalos atlyginimas pagal CK; BDAR + ADTAĮ). Tada naudoti **abu** šaltinių rinkinius.
 
 > Svarbu: ES **reglamentas** (Regulation) galioja tiesiogiai Lietuvoje be perkėlimo; ES **direktyva** (Directive) galioja per LR perkeliantį įstatymą, tada reikia rasti ir LR įgyvendinantį aktą. Detaliau: `references/es-teise.md`.
@@ -143,16 +143,13 @@ Tiesioginis URL formatas: `https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.[
 
 | Teisės aktas | Numeris | Pastaba |
 |---|---|---|
-| Pakuočių ir pakuočių atliekų reglamentas (PPWR) | Reglamentas (ES) 2025/40 | Taikomas nuo 2026-08-12 |
+| [Kliento sektoriaus reglamentai - pritaikyk diegiant] | [užpildyti] | Žr. `references/es-teise.md` 4 skyrių |
 | Bendrasis duomenų apsaugos reglamentas (BDAR/GDPR) | Reglamentas (ES) 2016/679 | Tiesioginis; papildo LR ADTAĮ |
 | REACH (cheminės medžiagos) | Reglamentas (EB) 1907/2006 | |
 | CLP (klasifikavimas, ženklinimas) | Reglamentas (EB) 1272/2008 | |
-| Maisto kontakto medžiagos (bendrasis) | Reglamentas (EB) 1935/2004 | |
-| Plastikinės maisto kontakto medžiagos | Reglamentas (ES) 10/2011 | |
-| Gera gamybos praktika (GMP) medžiagoms | Reglamentas (EB) 2023/2006 | |
 | Bendrasis gaminių saugos reglamentas (GPSR) | Reglamentas (ES) 2023/988 | |
 | Atsakomybė už gaminius su trūkumais | Direktyva (ES) 2024/2853 | Perkeliama į LR teisę |
-| Nesąžininga komercinė praktika (B2B tiekimo grandinė) | Direktyva (ES) 2019/633 | Perkelta į LR teisę |
+| Pavėluoti mokėjimai komerciniuose sandoriuose | Direktyva 2011/7/ES | Perkelta į LR teisę |
 
 > ES aktų galiojančią (konsoliduotą) redakciją visada tikrinti EUR-Lex. Detaliau: `references/es-teise.md`.
 

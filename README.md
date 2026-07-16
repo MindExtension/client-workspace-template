@@ -36,7 +36,8 @@ atnaujinti ir čia.
    Įrašyk firmines spalvas į `prezentacijos/templates/base.html` tailwind.config bloką.
 4. `git-paprastai` ir `atlikta`: sutikrink, kad kliento repo turi asmenines šakas vardais ir
    `komanda/nariai/<vardas>/uzduotys.md` struktūrą; įrašyk, kas yra peržiūrėtojas.
-5. `lt-verslo-teise/references/es-teise.md` 4 skyrių pritaikyk kliento sektoriui.
+5. `lt-verslo-teise`: pritaikyk kliento sektoriui `references/es-teise.md` 4 skyrių IR SKILL.md
+   (aprašo pavyzdžius bei ES aktų lentelę, ten yra [pritaikyk diegiant] žymė).
 6. Nukopijuok `metodas/skills-sarasas.md` į kliento bazę, palik tik įdiegtus įgūdžius, ištrink
    šablono pastabą viršuje, ir pridėk nuorodą į jį kliento pradiniame dokumente (PRADEK-CIA ar atitikmuo).
 7. Jei diegi prezentacijas: nukopijuok `diegimas/prezentaciju-irankiai.md` ir
