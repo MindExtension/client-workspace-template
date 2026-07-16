@@ -52,6 +52,8 @@ atnaujinti ir čia.
 
 - Patobulinus įgūdį kliento bazėje, generinę pamoką parnešk čia (be kliento duomenų).
 - Patobulinus čia, atnaujink klientų kopijas kito vizito metu.
+- Diegimo bangas klientams varo HQ skillas `skills-rollout` (silotech-hq): matrica kas kur
+  įdiegta, etapo vartai, vienas skillas per kartą, pristatymo draftas klientui.
 
 ## Kandidatai ateičiai
 
