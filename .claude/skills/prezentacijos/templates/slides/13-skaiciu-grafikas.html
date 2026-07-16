@@ -1,0 +1,59 @@
+<!-- ========================================================================
+     SKAIČIŲ GRAFIKAS - stulpelinis palyginimas be jokių bibliotekų
+     Tinka: metų ar mėnesių palyginimas, prieš ir po, apimtys pagal kategoriją
+     KEISTINA:
+       - Antraštė ir paantraštė
+       - Stulpeliai: height procentas = reikšmė (didžiausia reikšmė apie 90 procentų),
+         etiketė ir skaičius po kiekvienu stulpeliu
+       - Dešinio šono išvados (2 arba 3 punktai)
+     PASTABA: stulpelių aukščiai turi atitikti tikrus skaičius, netempk vizualo.
+     ======================================================================== -->
+<section class="slide bg-cream">
+  <div class="h-full flex flex-col" style="padding: 100px 120px;">
+    <!-- Viršutinė juosta -->
+
+    <!-- Antraštė -->
+    <h1 class="font-display font-bold text-ink mb-3" style="font-size: 64px; line-height: 1.05; letter-spacing: -0.03em;">
+      [Ką rodo šitie skaičiai?]
+    </h1>
+    <h2 class="font-display text-ink/60 mb-14" style="font-size: 34px; letter-spacing: -0.02em; font-weight: 400;">
+      [Šaltinis ir laikotarpis, pavyzdžiui: pardavimų suvestinė, 2025 sausis - 2026 birželis.]
+    </h2>
+
+    <div class="flex-1 grid grid-cols-12 gap-10">
+      <!-- Grafikas -->
+      <div class="col-span-8 bg-offwhite rounded-xl border hairline-light card-shadow flex flex-col" style="padding: 48px 56px;">
+        <div class="flex-1 bar-chart">
+          <div class="bar-col">
+            <div class="font-display font-bold text-ink mb-3" style="font-size: 28px;">[120]</div>
+            <div class="bar muted" style="height: 45%;"></div>
+            <div class="font-mono text-ink/50 text-[13px] uppercase mt-4" style="letter-spacing: 0.15em;">[2024]</div>
+          </div>
+          <div class="bar-col">
+            <div class="font-display font-bold text-ink mb-3" style="font-size: 28px;">[180]</div>
+            <div class="bar muted" style="height: 67%;"></div>
+            <div class="font-mono text-ink/50 text-[13px] uppercase mt-4" style="letter-spacing: 0.15em;">[2025]</div>
+          </div>
+          <div class="bar-col">
+            <div class="font-display font-bold text-orange-dark mb-3" style="font-size: 28px;">[240]</div>
+            <div class="bar" style="height: 90%;"></div>
+            <div class="font-mono text-ink/50 text-[13px] uppercase mt-4" style="letter-spacing: 0.15em;">[2026]</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Išvados -->
+      <div class="col-span-4 flex flex-col justify-center gap-8">
+        <div>
+          <div class="font-mono text-orange text-[12px] uppercase mb-2" style="letter-spacing: 0.3em;">[Išvada 1]</div>
+          <p class="font-body text-ink/80" style="font-size: 22px; line-height: 1.5;">[Vienas sakinys, ką šitas pokytis reiškia.]</p>
+        </div>
+        <div class="border-t hairline-light pt-8">
+          <div class="font-mono text-orange text-[12px] uppercase mb-2" style="letter-spacing: 0.3em;">[Išvada 2]</div>
+          <p class="font-body text-ink/80" style="font-size: 22px; line-height: 1.5;">[Antras sakinys, ko imamės toliau.]</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

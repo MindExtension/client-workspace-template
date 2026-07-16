@@ -1,0 +1,40 @@
+<!-- ========================================================================
+     PROCESŲ SCHEMA - proceso eiga, sprendimų medis ar sistemos jungtys
+     Tinka: užsakymo kelias, dokumentų srautas, kas po ko vyksta, kas su kuo susijęs
+     KEISTINA:
+       - Viršutinė etiketė ir antraštė
+       - Mermaid schema (bloke pre.mermaid): mazgai, rodyklės, pavadinimai
+       - Apačios pastaba
+     ======================================================================== -->
+<section class="slide bg-cream">
+  <div class="h-full flex flex-col" style="padding: 100px 120px;">
+    <!-- Viršutinė juosta -->
+
+    <!-- Antraštė -->
+    <div class="flex items-center gap-6 mb-10">
+      <div class="accent-bar"></div>
+      <h1 class="font-display font-bold text-ink" style="font-size: 64px; line-height: 1.05; letter-spacing: -0.03em;">
+        [Proceso pavadinimas]
+      </h1>
+    </div>
+
+    <!-- Schema kortelėje -->
+    <div class="flex-1 bg-offwhite rounded-xl border hairline-light card-shadow diagram-box" style="padding: 48px;">
+      <pre class="mermaid">
+flowchart LR
+  A["Užklausa"] --> B["Pasiūlymas"]
+  B --> C{"Patvirtinta?"}
+  C -- "Taip" --> D["Užsakymas"]
+  C -- "Ne" --> E["Priežasties fiksavimas"]
+  D --> F["Gamyba"]
+  F --> G["Pristatymas"]
+      </pre>
+    </div>
+
+    <!-- Apačios pastaba -->
+    <div class="mt-8 font-body text-ink/60" style="font-size: 20px;">
+      [Viena pastaba apie procesą: kur dažniausiai stringa arba kas svarbiausia.]
+    </div>
+
+  </div>
+</section>

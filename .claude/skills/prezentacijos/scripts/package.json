@@ -1,0 +1,13 @@
+{
+  "name": "prezentacija",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "render": "node render.mjs",
+    "render:png": "node render.mjs --png"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}

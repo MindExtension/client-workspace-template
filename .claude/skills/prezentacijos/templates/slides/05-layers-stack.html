@@ -1,0 +1,115 @@
+<!-- ========================================================================
+     LAYERS-STACK - 5 stacked architectural layers (dark bg)
+     Top layer = most advanced, bottom = foundation. Read bottom-up.
+     Middle layer gets the orange "featured" highlight.
+     CUSTOMIZE:
+       - Title (with orange accent)
+       - Subtitle
+       - Each layer: number (01-05), title, subtitle, 3 tag pills
+       - Bottom closing line
+     NOTE: Each layer has a different background opacity to convey "built up"
+ - keep that gradient (top lightest, bottom strongest).
+     ======================================================================== -->
+<section class="slide" style="background: linear-gradient(180deg, #171F2A 0%, #24303F 60%, #171F2A 100%);">
+  <div class="absolute inset-0 glow-orange-corner opacity-30"></div>
+  <div class="absolute inset-0 grain pointer-events-none"></div>
+
+  <div class="relative z-10 h-full flex flex-col" style="padding: 80px 120px;">
+
+    <!-- Title -->
+    <div class="mb-8">
+      <div class="flex items-center gap-4 mb-4">
+        <div class="accent-bar" style="background: #F6E2D5; height: 36px;"></div>
+        <div class="font-mono text-white/60 text-[13px] uppercase" style="letter-spacing: 0.25em;">[Eyebrow - e.g. Read bottom-up · built bottom-up]</div>
+      </div>
+      <h1 class="font-display font-bold text-white" style="font-size: 64px; line-height: 1.0; letter-spacing: -0.03em;">
+        [Framework name]. <span class="text-orange-light">[Accent line.]</span>
+      </h1>
+      <p class="text-white/60 mt-4 max-w-[1200px]" style="font-size: 19px; line-height: 1.5;">
+        [1-sentence framing of how the layers work together.]
+      </p>
+    </div>
+
+    <!-- 5 stacked layer rows (05 top → 01 bottom) -->
+    <div class="flex-1 flex flex-col gap-3">
+      <!-- Layer 5 (top) -->
+      <div class="rounded-xl border hairline-dark flex items-center gap-8" style="background: rgba(255,255,255,0.02); padding: 18px 28px;">
+        <div class="font-mono text-orange-light/45 text-[12px] uppercase flex-shrink-0" style="letter-spacing: 0.3em; width: 44px;">05</div>
+        <div class="flex-shrink-0" style="width: 310px;">
+          <div class="font-display font-bold text-white" style="font-size: 26px; letter-spacing: -0.02em;">[Layer 5 name]</div>
+          <div class="font-body text-white/50 text-[14px] mt-1">[1-line description]</div>
+        </div>
+        <div class="flex gap-2 flex-wrap">
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.55); letter-spacing: 0.15em;">[Tag]</span>
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.55); letter-spacing: 0.15em;">[Tag]</span>
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.55); letter-spacing: 0.15em;">[Tag]</span>
+        </div>
+      </div>
+
+      <!-- Layer 4 -->
+      <div class="rounded-xl border hairline-dark flex items-center gap-8" style="background: rgba(255,255,255,0.035); padding: 18px 28px;">
+        <div class="font-mono text-orange-light/60 text-[12px] uppercase flex-shrink-0" style="letter-spacing: 0.3em; width: 44px;">04</div>
+        <div class="flex-shrink-0" style="width: 310px;">
+          <div class="font-display font-bold text-white" style="font-size: 26px; letter-spacing: -0.02em;">[Layer 4 name]</div>
+          <div class="font-body text-white/60 text-[14px] mt-1">[1-line description]</div>
+        </div>
+        <div class="flex gap-2 flex-wrap">
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.7); letter-spacing: 0.15em;">[Tag]</span>
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.7); letter-spacing: 0.15em;">[Tag]</span>
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.7); letter-spacing: 0.15em;">[Tag]</span>
+        </div>
+      </div>
+
+      <!-- Layer 3 (featured orange) -->
+      <div class="rounded-xl border flex items-center gap-8" style="background: rgba(231,31,100,0.12); border-color: rgba(252,227,236,0.22); padding: 18px 28px;">
+        <div class="font-mono text-orange-light text-[12px] uppercase flex-shrink-0" style="letter-spacing: 0.3em; width: 44px;">03</div>
+        <div class="flex-shrink-0" style="width: 310px;">
+          <div class="font-display font-bold text-white" style="font-size: 26px; letter-spacing: -0.02em;">[Layer 3 name]</div>
+          <div class="font-body text-white/75 text-[14px] mt-1">[1-line description - this is the featured/highlighted layer]</div>
+        </div>
+        <div class="flex gap-2 flex-wrap">
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(252,227,236,0.22); color: #F6E2D5; letter-spacing: 0.15em;">[Tag]</span>
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(252,227,236,0.22); color: #F6E2D5; letter-spacing: 0.15em;">[Tag]</span>
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(252,227,236,0.22); color: #F6E2D5; letter-spacing: 0.15em;">[Tag]</span>
+        </div>
+      </div>
+
+      <!-- Layer 2 -->
+      <div class="rounded-xl border hairline-dark flex items-center gap-8" style="background: rgba(255,255,255,0.05); padding: 18px 28px;">
+        <div class="font-mono text-orange-light/80 text-[12px] uppercase flex-shrink-0" style="letter-spacing: 0.3em; width: 44px;">02</div>
+        <div class="flex-shrink-0" style="width: 310px;">
+          <div class="font-display font-bold text-white" style="font-size: 26px; letter-spacing: -0.02em;">[Layer 2 name]</div>
+          <div class="font-body text-white/70 text-[14px] mt-1">[1-line description]</div>
+        </div>
+        <div class="flex gap-2 flex-wrap">
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.85); letter-spacing: 0.15em;">[Tag]</span>
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.85); letter-spacing: 0.15em;">[Tag]</span>
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.85); letter-spacing: 0.15em;">[Tag]</span>
+        </div>
+      </div>
+
+      <!-- Layer 1 (bottom, foundation) -->
+      <div class="rounded-xl border flex items-center gap-8" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.22); padding: 18px 28px;">
+        <div class="font-mono text-white text-[12px] uppercase flex-shrink-0" style="letter-spacing: 0.3em; width: 44px;">01</div>
+        <div class="flex-shrink-0" style="width: 310px;">
+          <div class="font-display font-bold text-white" style="font-size: 26px; letter-spacing: -0.02em;">[Layer 1 name]</div>
+          <div class="font-body text-white/80 text-[14px] mt-1">[1-line description]</div>
+        </div>
+        <div class="flex gap-2 flex-wrap">
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.18); color: white; letter-spacing: 0.15em;">[Tag]</span>
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.18); color: white; letter-spacing: 0.15em;">[Tag]</span>
+          <span class="px-3 py-1.5 text-[11px] font-mono uppercase rounded-md" style="background: rgba(255,255,255,0.18); color: white; letter-spacing: 0.15em;">[Tag]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-8 pt-5 border-t hairline-dark flex justify-between items-center">
+      <p class="font-display text-white/85" style="font-size: 18px;">
+        [Closing line]: <span class="text-orange-light">[accent phrase.]</span>
+      </p>
+      <div class="font-mono text-white/40 text-[11px] uppercase" style="letter-spacing: 0.25em;">[Sub-note]</div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,80 @@
+<!-- ========================================================================
+     THREE-COLUMNS - 3 equal cards, one featured dark with orange glow
+     Best for: modes/options/categories (Eliminate/Augment/Enable),
+     tier comparisons, 3-part frameworks
+     CUSTOMIZE:
+       - Top-right eyebrow
+       - H1 + H2/subheadline
+       - Each card: eyebrow, H2 title (2 lines), body, bottom tag + value
+     ======================================================================== -->
+<section class="slide bg-cream">
+  <div class="h-full flex flex-col" style="padding: 100px 120px;">
+
+    <!-- Title -->
+    <h1 class="font-display font-bold text-ink mb-4" style="font-size: 76px; line-height: 1.05; letter-spacing: -0.03em; max-width: 1400px;">
+      [Primary headline on one line.]
+    </h1>
+    <h2 class="font-display text-ink/60 mb-20" style="font-size: 44px; line-height: 1.1; letter-spacing: -0.02em; font-weight: 400;">
+      [Secondary, contextual line.]
+    </h2>
+
+    <!-- 3 columns -->
+    <div class="flex-1 grid grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-offwhite rounded-xl border hairline-light card-shadow flex flex-col relative overflow-hidden" style="padding: 56px 48px;">
+        <div class="absolute top-6 right-8 font-display font-bold text-ink/[0.05]" style="font-size: 180px; line-height: 1; letter-spacing: -0.05em;">01</div>
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="font-mono text-orange text-[12px] uppercase mb-6" style="letter-spacing: 0.3em;">[Eyebrow]</div>
+          <h2 class="font-display font-bold text-ink mb-6" style="font-size: 52px; line-height: 1.0; letter-spacing: -0.03em;">
+            [Two-line<br>title here.]
+          </h2>
+          <p class="font-body text-ink/75 mb-auto" style="font-size: 18px; line-height: 1.55;">
+            [1-2 sentence body describing the mode or category.]
+          </p>
+          <div class="mt-10 pt-6 border-t hairline-light">
+            <div class="font-mono text-ink/45 text-[11px] uppercase mb-1" style="letter-spacing: 0.2em;">[Footer label]</div>
+            <div class="font-display font-bold text-orange" style="font-size: 32px; letter-spacing: -0.02em;">[Value]</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-offwhite rounded-xl border hairline-light card-shadow flex flex-col relative overflow-hidden" style="padding: 56px 48px;">
+        <div class="absolute top-6 right-8 font-display font-bold text-ink/[0.05]" style="font-size: 180px; line-height: 1; letter-spacing: -0.05em;">02</div>
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="font-mono text-orange text-[12px] uppercase mb-6" style="letter-spacing: 0.3em;">[Eyebrow]</div>
+          <h2 class="font-display font-bold text-ink mb-6" style="font-size: 52px; line-height: 1.0; letter-spacing: -0.03em;">
+            [Two-line<br>title here.]
+          </h2>
+          <p class="font-body text-ink/75 mb-auto" style="font-size: 18px; line-height: 1.55;">
+            [1-2 sentence body.]
+          </p>
+          <div class="mt-10 pt-6 border-t hairline-light">
+            <div class="font-mono text-ink/45 text-[11px] uppercase mb-1" style="letter-spacing: 0.2em;">[Footer label]</div>
+            <div class="font-display font-bold text-orange" style="font-size: 32px; letter-spacing: -0.02em;">[Value]</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 (dark featured) -->
+      <div class="bg-navy rounded-xl card-shadow-lg flex flex-col relative overflow-hidden" style="padding: 56px 48px;">
+        <div class="absolute inset-0 glow-orange-sm opacity-40"></div>
+        <div class="absolute top-6 right-8 font-display font-bold" style="font-size: 180px; line-height: 1; letter-spacing: -0.05em; color: rgba(255,255,255,0.06);">03</div>
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="font-mono text-orange-light text-[12px] uppercase mb-6" style="letter-spacing: 0.3em;">[Eyebrow]</div>
+          <h2 class="font-display font-bold text-white mb-6" style="font-size: 52px; line-height: 1.0; letter-spacing: -0.03em;">
+            [Two-line<br>title here.]
+          </h2>
+          <p class="font-body text-white/75 mb-auto" style="font-size: 18px; line-height: 1.55;">
+            [1-2 sentence body - this is the featured card, usually the "new frontier" or "most advanced" option.]
+          </p>
+          <div class="mt-10 pt-6 border-t hairline-dark">
+            <div class="font-mono text-white/40 text-[11px] uppercase mb-1" style="letter-spacing: 0.2em;">[Footer label]</div>
+            <div class="font-display font-bold text-orange-light" style="font-size: 32px; letter-spacing: -0.02em;">[Value]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

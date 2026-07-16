@@ -1,0 +1,104 @@
+<!-- ========================================================================
+     CONCENTRIC-DIAGRAM - left copy + right SVG concentric rings
+     Best for: "[Person] at the center" / hub-and-spoke organization diagrams
+     CUSTOMIZE:
+       - Top-right LAYER pill (optional - remove if not in a layered deck)
+       - Eyebrow + H1 with orange accent
+       - 2 body paragraphs
+       - Optional outcome box at bottom
+       - SVG: center label, 3 ring labels (outer/middle/inner)
+     SVG structure: 3 rings (radius 140/230/320), radial hairlines,
+       dots on each ring (4 inner / 6 middle orange / 8 outer),
+       orange center circle with text label.
+     ======================================================================== -->
+<section class="slide bg-cream">
+  <div class="h-full flex flex-col" style="padding: 90px 120px;">
+
+    <!-- 2-col -->
+    <div class="flex-1 grid grid-cols-12 gap-16">
+      <!-- Left 50%: text -->
+      <div class="col-span-6 flex flex-col justify-center">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="accent-bar"></div>
+          <div class="font-mono text-ink/50 text-[13px] uppercase" style="letter-spacing: 0.25em;">[Eyebrow]</div>
+        </div>
+        <h1 class="font-display font-bold text-ink" style="font-size: 88px; line-height: 0.98; letter-spacing: -0.03em;">
+          [First line of<br>
+          <span class="text-orange">akcentuota fraze</span>.]
+        </h1>
+        <p class="font-body text-ink/75 mt-10" style="font-size: 20px; line-height: 1.55;">
+          [Paragraph 1 - sets up the principle or why this arrangement matters.]
+        </p>
+        <p class="font-body text-ink mt-5" style="font-size: 20px; line-height: 1.55; font-weight: 500;">
+          [Paragraph 2 - bolder, the punchline or the outcome.]
+        </p>
+
+        <div class="mt-10 pt-6 border-t hairline-light flex items-center gap-8">
+          <div>
+            <div class="font-mono text-ink/50 text-[11px] uppercase mb-1" style="letter-spacing: 0.25em;">[Rezultatas]</div>
+            <div class="font-display font-bold text-ink text-[22px]" style="letter-spacing: -0.02em;">[1-line outcome statement.]</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right 50%: concentric diagram -->
+      <div class="col-span-6 flex items-center justify-center relative">
+        <svg viewBox="0 0 720 720" class="w-full max-w-[620px]" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="centerGlow">
+              <stop offset="0%" stop-color="#C65D2A" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="#C65D2A" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="360" cy="360" r="180" fill="url(#centerGlow)"/>
+
+          <!-- Rings (outer → inner) -->
+          <circle cx="360" cy="360" r="320" fill="none" stroke="rgba(22,22,22,0.08)" stroke-width="1"/>
+          <circle cx="360" cy="360" r="230" fill="none" stroke="rgba(22,22,22,0.1)" stroke-width="1"/>
+          <circle cx="360" cy="360" r="140" fill="none" stroke="rgba(22,22,22,0.14)" stroke-width="1"/>
+
+          <!-- Radial hairlines -->
+          <line x1="360" y1="40" x2="360" y2="680" stroke="rgba(22,22,22,0.05)" stroke-width="1"/>
+          <line x1="40" y1="360" x2="680" y2="360" stroke="rgba(22,22,22,0.05)" stroke-width="1"/>
+          <line x1="133" y1="133" x2="587" y2="587" stroke="rgba(22,22,22,0.05)" stroke-width="1"/>
+          <line x1="587" y1="133" x2="133" y2="587" stroke="rgba(22,22,22,0.05)" stroke-width="1"/>
+
+          <!-- Outer ring dots (8) - grey -->
+          <circle cx="360" cy="40" r="7" fill="#1B1B1B" opacity="0.4"/>
+          <circle cx="586" cy="134" r="7" fill="#1B1B1B" opacity="0.4"/>
+          <circle cx="680" cy="360" r="7" fill="#1B1B1B" opacity="0.4"/>
+          <circle cx="586" cy="586" r="7" fill="#1B1B1B" opacity="0.4"/>
+          <circle cx="360" cy="680" r="7" fill="#1B1B1B" opacity="0.4"/>
+          <circle cx="134" cy="586" r="7" fill="#1B1B1B" opacity="0.4"/>
+          <circle cx="40" cy="360" r="7" fill="#1B1B1B" opacity="0.4"/>
+          <circle cx="134" cy="134" r="7" fill="#1B1B1B" opacity="0.4"/>
+
+          <!-- Middle ring dots (6) - orange -->
+          <circle cx="360" cy="130" r="9" fill="#C65D2A" opacity="0.6"/>
+          <circle cx="559" cy="245" r="9" fill="#C65D2A" opacity="0.6"/>
+          <circle cx="559" cy="475" r="9" fill="#C65D2A" opacity="0.6"/>
+          <circle cx="360" cy="590" r="9" fill="#C65D2A" opacity="0.6"/>
+          <circle cx="161" cy="475" r="9" fill="#C65D2A" opacity="0.6"/>
+          <circle cx="161" cy="245" r="9" fill="#C65D2A" opacity="0.6"/>
+
+          <!-- Inner ring dots (4) - dark grey -->
+          <circle cx="360" cy="220" r="11" fill="#1B1B1B" opacity="0.8"/>
+          <circle cx="500" cy="360" r="11" fill="#1B1B1B" opacity="0.8"/>
+          <circle cx="360" cy="500" r="11" fill="#1B1B1B" opacity="0.8"/>
+          <circle cx="220" cy="360" r="11" fill="#1B1B1B" opacity="0.8"/>
+
+          <!-- Center (CHANGE LABEL) -->
+          <circle cx="360" cy="360" r="58" fill="#C65D2A"/>
+          <circle cx="360" cy="360" r="78" fill="none" stroke="#C65D2A" stroke-width="1" opacity="0.35"/>
+          <text x="360" y="368" text-anchor="middle" fill="white" font-family="InstrumentSans, sans-serif" font-weight="700" font-size="22">[CENTER]</text>
+
+          <!-- Ring labels (CHANGE TEXT) -->
+          <text x="360" y="18" text-anchor="middle" fill="rgba(22,22,22,0.5)" font-family="DMMono, monospace" font-size="11" letter-spacing="3">[OUTER RING]</text>
+          <text x="480" y="188" text-anchor="middle" fill="#A34A20" font-family="DMMono, monospace" font-size="11" letter-spacing="3">[MIDDLE RING]</text>
+          <text x="360" y="290" text-anchor="middle" fill="rgba(22,22,22,0.55)" font-family="DMMono, monospace" font-size="11" letter-spacing="3">[INNER RING]</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,135 @@
+<!-- ========================================================================
+     DATA-SCHEMA - canonical record / schema visual
+     Best for: "this is what we capture about every X", data structure slides
+     CUSTOMIZE:
+       - Title + eyebrow
+       - 3 principle bullets on left (numbered 01/02/03)
+       - Schema header title (e.g. "event.record.v1")
+       - 9 field rows with name / description / tag
+       - Last row is highlighted (the "compounds" / key field)
+     ======================================================================== -->
+<section class="slide bg-cream">
+  <div class="h-full flex flex-col" style="padding: 90px 120px;">
+
+    <!-- Title -->
+    <div class="mb-10">
+      <div class="flex items-center gap-5 mb-5">
+        <div class="accent-bar"></div>
+        <div class="font-mono text-ink/50 text-[13px] uppercase" style="letter-spacing: 0.25em;">[Eyebrow]</div>
+      </div>
+      <h1 class="font-display font-bold text-ink" style="font-size: 72px; line-height: 0.98; letter-spacing: -0.03em;">
+        [First line,]<br>
+        [su <span class="text-orange">svarbiausia sąvoka</span>.]
+      </h1>
+    </div>
+
+    <!-- 2-col: principles left, schema right -->
+    <div class="flex-1 grid grid-cols-12 gap-12">
+      <!-- Left 5 -->
+      <div class="col-span-5 flex flex-col justify-start">
+        <p class="font-body text-ink/70 mb-8" style="font-size: 18px; line-height: 1.55;">
+          [Framing paragraph - why structure matters, 1-2 sentences.]
+        </p>
+
+        <div class="space-y-7">
+          <div class="flex gap-5">
+            <div class="font-display font-bold text-orange flex-shrink-0 text-center" style="font-size: 32px; letter-spacing: 0; line-height: 1; width: 52px; font-variant-numeric: tabular-nums;">01</div>
+            <div>
+              <div class="font-display font-bold text-ink text-[19px]" style="letter-spacing: -0.02em;">[Principle 1.]</div>
+              <div class="font-body text-ink/65 text-[15px] mt-1 leading-[1.55]">[Elaboration.]</div>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="font-display font-bold text-orange flex-shrink-0 text-center" style="font-size: 32px; letter-spacing: 0; line-height: 1; width: 52px; font-variant-numeric: tabular-nums;">02</div>
+            <div>
+              <div class="font-display font-bold text-ink text-[19px]" style="letter-spacing: -0.02em;">[Principle 2.]</div>
+              <div class="font-body text-ink/65 text-[15px] mt-1 leading-[1.55]">[Elaboration.]</div>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="font-display font-bold text-orange flex-shrink-0 text-center" style="font-size: 32px; letter-spacing: 0; line-height: 1; width: 52px; font-variant-numeric: tabular-nums;">03</div>
+            <div>
+              <div class="font-display font-bold text-ink text-[19px]" style="letter-spacing: -0.02em;">[Principle 3.]</div>
+              <div class="font-body text-ink/65 text-[15px] mt-1 leading-[1.55]">[Elaboration.]</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 pt-6 border-t hairline-light">
+          <p class="font-body text-ink/85 italic" style="font-size: 17px; line-height: 1.5;">
+            [Closing thought - punchy.]
+          </p>
+        </div>
+      </div>
+
+      <!-- Right 7: schema visual -->
+      <div class="col-span-7 flex items-center">
+        <div class="w-full">
+          <div class="font-mono text-ink/50 text-[12px] uppercase mb-3" style="letter-spacing: 0.3em;">[Above-schema label]</div>
+
+          <div class="rounded-xl border hairline-light card-shadow-lg overflow-hidden" style="background: #FDFCFA;">
+            <!-- Schema header -->
+            <div class="px-6 py-4 border-b hairline-light flex items-center justify-between" style="background: rgba(22,22,22,0.025);">
+              <div class="flex items-center gap-3">
+                <div class="w-2 h-2 rounded-full bg-orange"></div>
+                <div class="font-display font-bold text-ink text-[16px]">[schema.name.v1]</div>
+              </div>
+              <div class="font-mono text-ink/45 text-[11px] uppercase" style="letter-spacing: 0.25em;">[Tags e.g. Structured · portable · AI-readable]</div>
+            </div>
+
+            <!-- Fields (9 rows) -->
+            <div>
+              <div class="flex items-center px-6 py-3" style="border-bottom: 1px solid rgba(22,22,22,0.05);">
+                <div class="font-mono text-ink/85 text-[14px] w-44">[field_1]</div>
+                <div class="font-mono text-ink/55 text-[13px] flex-1">[sub-fields · separated · by · dots]</div>
+                <div class="font-mono text-orange-dark text-[11px] uppercase" style="letter-spacing: 0.2em;">[tag]</div>
+              </div>
+              <div class="flex items-center px-6 py-3" style="border-bottom: 1px solid rgba(22,22,22,0.05);">
+                <div class="font-mono text-ink/85 text-[14px] w-44">[field_2]</div>
+                <div class="font-mono text-ink/55 text-[13px] flex-1">[description]</div>
+                <div class="font-mono text-orange-dark text-[11px] uppercase" style="letter-spacing: 0.2em;">[tag]</div>
+              </div>
+              <div class="flex items-center px-6 py-3" style="border-bottom: 1px solid rgba(22,22,22,0.05);">
+                <div class="font-mono text-ink/85 text-[14px] w-44">[field_3]</div>
+                <div class="font-mono text-ink/55 text-[13px] flex-1">[description]</div>
+                <div class="font-mono text-ink/40 text-[11px] uppercase" style="letter-spacing: 0.2em;">[tag]</div>
+              </div>
+              <div class="flex items-center px-6 py-3" style="border-bottom: 1px solid rgba(22,22,22,0.05);">
+                <div class="font-mono text-ink/85 text-[14px] w-44">[field_4]</div>
+                <div class="font-mono text-ink/55 text-[13px] flex-1">[description]</div>
+                <div class="font-mono text-orange-dark text-[11px] uppercase" style="letter-spacing: 0.2em;">[tag]</div>
+              </div>
+              <div class="flex items-center px-6 py-3" style="border-bottom: 1px solid rgba(22,22,22,0.05);">
+                <div class="font-mono text-ink/85 text-[14px] w-44">[field_5]</div>
+                <div class="font-mono text-ink/55 text-[13px] flex-1">[description]</div>
+                <div class="font-mono text-ink/40 text-[11px] uppercase" style="letter-spacing: 0.2em;">[tag]</div>
+              </div>
+              <div class="flex items-center px-6 py-3" style="border-bottom: 1px solid rgba(22,22,22,0.05);">
+                <div class="font-mono text-ink/85 text-[14px] w-44">[field_6]</div>
+                <div class="font-mono text-ink/55 text-[13px] flex-1">[description]</div>
+                <div class="font-mono text-ink/40 text-[11px] uppercase" style="letter-spacing: 0.2em;">[tag]</div>
+              </div>
+              <div class="flex items-center px-6 py-3" style="border-bottom: 1px solid rgba(22,22,22,0.05);">
+                <div class="font-mono text-ink/85 text-[14px] w-44">[field_7]</div>
+                <div class="font-mono text-ink/55 text-[13px] flex-1">[description]</div>
+                <div class="font-mono text-orange-dark text-[11px] uppercase" style="letter-spacing: 0.2em;">[tag]</div>
+              </div>
+              <div class="flex items-center px-6 py-3" style="border-bottom: 1px solid rgba(22,22,22,0.05);">
+                <div class="font-mono text-ink/85 text-[14px] w-44">[field_8]</div>
+                <div class="font-mono text-ink/55 text-[13px] flex-1">[description]</div>
+                <div class="font-mono text-orange-dark text-[11px] uppercase" style="letter-spacing: 0.2em;">[tag]</div>
+              </div>
+              <!-- Last row highlighted (the key/payoff field) -->
+              <div class="flex items-center px-6 py-3" style="background: rgba(231,31,100,0.07);">
+                <div class="font-mono text-ink text-[14px] w-44 font-bold">[key_field]</div>
+                <div class="font-mono text-ink/70 text-[13px] flex-1">[description of the compounding/key field]</div>
+                <div class="font-mono text-orange-dark text-[11px] uppercase font-bold" style="letter-spacing: 0.2em;">[COMPOUNDS]</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,165 @@
+<!-- ========================================================================
+     QA-CONVERSATION - chat-style Q&A demo card on the right, copy on the left
+     Best for: "ask the company anything" demos, AI-powered answer showcases,
+     knowledge-base queries rendered as a natural interaction.
+     CUSTOMIZE:
+       - Left bullets (3 outcome-framed points, business language NOT tech)
+       - Optional "Coming next" future capability block at the bottom
+       - Right Q&A card: header, user question, AI answer with ranked/tagged data
+       - Footer: source count
+     ======================================================================== -->
+<section class="slide bg-cream">
+  <div class="h-full flex flex-col" style="padding: 90px 120px;">
+
+    <!-- Title -->
+    <div class="mb-10">
+      <div class="flex items-center gap-5 mb-5">
+        <div class="accent-bar"></div>
+        <div class="font-mono text-ink/50 text-[13px] uppercase" style="letter-spacing: 0.25em;">[Eyebrow]</div>
+      </div>
+      <h1 class="font-display font-bold text-ink" style="font-size: 68px; line-height: 0.98; letter-spacing: -0.03em;">
+        [First line]<br>
+        <span class="text-orange">[orange accent]</span>.
+      </h1>
+    </div>
+
+    <!-- 2-col -->
+    <div class="flex-1 grid grid-cols-12 gap-12">
+      <!-- Left 5: business outcomes -->
+      <div class="col-span-5 flex flex-col justify-start">
+        <p class="font-body text-ink/70 mb-8" style="font-size: 18px; line-height: 1.55;">
+          [1-2 sentences framing the value - business terms, not tech.]
+        </p>
+
+        <div class="space-y-6">
+          <div class="flex gap-5">
+            <div class="font-display font-bold text-orange flex-shrink-0 text-center" style="font-size: 28px; letter-spacing: 0; line-height: 1; width: 48px; font-variant-numeric: tabular-nums;">01</div>
+            <div>
+              <div class="font-display font-bold text-ink text-[19px]" style="letter-spacing: -0.02em;">[Outcome 1 headline.]</div>
+              <div class="font-body text-ink/65 text-[15px] mt-1 leading-[1.55]">[1-line description.]</div>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="font-display font-bold text-orange flex-shrink-0 text-center" style="font-size: 28px; letter-spacing: 0; line-height: 1; width: 48px; font-variant-numeric: tabular-nums;">02</div>
+            <div>
+              <div class="font-display font-bold text-ink text-[19px]" style="letter-spacing: -0.02em;">[Outcome 2 headline.]</div>
+              <div class="font-body text-ink/65 text-[15px] mt-1 leading-[1.55]">[1-line description.]</div>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="font-display font-bold text-orange flex-shrink-0 text-center" style="font-size: 28px; letter-spacing: 0; line-height: 1; width: 48px; font-variant-numeric: tabular-nums;">03</div>
+            <div>
+              <div class="font-display font-bold text-ink text-[19px]" style="letter-spacing: -0.02em;">[Outcome 3 headline.]</div>
+              <div class="font-body text-ink/65 text-[15px] mt-1 leading-[1.55]">[1-line description.]</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPTIONAL: "Coming next" future capability -->
+        <div class="mt-8 pt-6 border-t hairline-light">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="px-2.5 py-1 rounded font-body text-[10px] uppercase" style="background: rgba(231,31,100,0.12); color: #A34A20; letter-spacing: 0.22em; font-weight: 600;">[Netrukus]</span>
+            <div class="font-display font-bold text-ink text-[18px]" style="letter-spacing: -0.02em;">[Future capability.]</div>
+          </div>
+          <p class="font-body text-ink/60 text-[14px] leading-[1.5] italic">
+            "[Example future interaction or command.]"
+          </p>
+        </div>
+      </div>
+
+      <!-- Right 7: Q&A conversation card -->
+      <div class="col-span-7 flex items-center">
+        <div class="w-full">
+          <div class="font-mono text-ink/50 text-[12px] uppercase mb-3" style="letter-spacing: 0.3em;">[Above-card label]</div>
+
+          <div class="rounded-xl border hairline-light card-shadow-lg overflow-hidden" style="background: #FFFFFF;">
+            <!-- Card header -->
+            <div class="px-6 py-4 border-b hairline-light flex items-center justify-between" style="background: rgba(231,31,100,0.04);">
+              <div class="flex items-center gap-2.5">
+                <div class="w-2 h-2 rounded-full bg-orange"></div>
+                <div class="font-body text-ink font-semibold text-[14px]">[Agent name]</div>
+              </div>
+              <div class="font-body text-ink/45 text-[11px]">[Subline - e.g. "Always on · trained on your data"]</div>
+            </div>
+
+            <!-- User question -->
+            <div class="px-6 py-4 border-b hairline-light">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-7 h-7 rounded-full flex items-center justify-center font-display font-bold text-[12px]" style="background: rgba(22,22,22,0.08); color: #1B1B1B;">[X]</div>
+                <span class="font-body text-ink font-semibold text-[13px]">[User name]</span>
+                <span class="font-body text-ink/45 text-[11px]">[Timestamp]</span>
+              </div>
+              <div class="pl-10 font-body text-ink/85 text-[15px] italic leading-[1.55]">
+                "[User's natural-language question, usually concrete and business-specific.]"
+              </div>
+            </div>
+
+            <!-- AI answer -->
+            <div class="px-6 py-4">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-7 h-7 rounded-full flex items-center justify-center" style="background: rgba(231,31,100,0.2);">
+                  <div class="w-2 h-2 rounded-full bg-orange"></div>
+                </div>
+                <span class="font-body text-ink font-semibold text-[13px]">[Agent name]</span>
+                <span class="font-body text-ink/45 text-[11px]">[Timestamp · answered in Xs]</span>
+              </div>
+              <div class="pl-10">
+                <div class="font-body text-ink/85 text-[14px] leading-[1.55] mb-3">
+                  [Answer intro - 1 sentence.]
+                </div>
+                <!-- Ranked items (3 cards, decreasing emphasis) -->
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between rounded-lg border hairline-light px-4 py-2.5" style="background: rgba(22,22,22,0.02);">
+                    <div class="flex items-center gap-3">
+                      <div class="font-display font-bold text-orange text-[13px]" style="width: 22px;">01</div>
+                      <div class="font-body text-ink font-semibold text-[14px]">[Item 1 name]</div>
+                    </div>
+                    <div class="flex items-center gap-4 font-body text-ink/65 text-[12px]">
+                      <span>[metric 1]</span>
+                      <span>[metric 2]</span>
+                      <span>[metric 3]</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between rounded-lg border hairline-light px-4 py-2.5" style="background: rgba(22,22,22,0.015);">
+                    <div class="flex items-center gap-3">
+                      <div class="font-display font-bold text-orange/70 text-[13px]" style="width: 22px;">02</div>
+                      <div class="font-body text-ink font-semibold text-[14px]">[Item 2 name]</div>
+                    </div>
+                    <div class="flex items-center gap-4 font-body text-ink/65 text-[12px]">
+                      <span>[metric 1]</span>
+                      <span>[metric 2]</span>
+                      <span>[metric 3]</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between rounded-lg border hairline-light px-4 py-2.5" style="background: rgba(22,22,22,0.01);">
+                    <div class="flex items-center gap-3">
+                      <div class="font-display font-bold text-orange/55 text-[13px]" style="width: 22px;">03</div>
+                      <div class="font-body text-ink font-semibold text-[14px]">[Item 3 name]</div>
+                    </div>
+                    <div class="flex items-center gap-4 font-body text-ink/65 text-[12px]">
+                      <span>[metric 1]</span>
+                      <span>[metric 2]</span>
+                      <span>[metric 3]</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 font-body text-ink/65 text-[13px] italic leading-[1.5]">
+                  [Follow-up note - context, caveat, or recommendation.]
+                </div>
+              </div>
+            </div>
+
+            <!-- Card footer -->
+            <div class="px-6 py-3 border-t hairline-light flex items-center justify-between" style="background: rgba(22,22,22,0.018);">
+              <div class="flex items-center gap-4 font-body text-ink/55 text-[11px]">
+                <span>[Data provenance - "Pulled from X records · Y sources"]</span>
+              </div>
+              <div class="font-body text-ink/40 text-[11px]">[Sources cited inline]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
