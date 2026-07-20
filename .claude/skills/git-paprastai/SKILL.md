@@ -40,11 +40,14 @@ Prieš bet ką pasitikrink, kurioje šakoje narys yra: `git branch --show-curren
 
 **Atiduok darbą / išsaugok**
 1. `git status`, pasižiūrėk, kas pakeista, ir trumpai pasakyk nariui.
-2. `git add -A`
-3. `git commit -m "[TYPE]: aiškus lietuviškas paaiškinimas"` (TYPE: ADD, UPDATE, FIX, REMOVE; jokių ilgų brūkšnių žinutėje).
-4. `git push origin <jo-šaka>`
-5. Atidaryk arba nurodyk Pull Request į `main` (`gh pr create` arba pateik nuorodą). Peržiūrėtojas patvirtina ir sujungia.
-6. Pranešk paprastai ir pasiūlyk tą užduotį pažymėti atlikta jo `komanda/nariai/<vardas>/uzduotys.md` faile.
+2. Parodyk `git diff` ir su `git add <konkretūs-keliai>` įtrauk tik šitam darbui skirtus failus.
+   `git add -A` nenaudok.
+3. Parodyk `git diff --cached --name-only` ir visą `git diff --cached`. Netikėtas, komunikacijos,
+   kito kliento ar tiekėjo HQ failas reiškia STOP ir išėmimą iš staged pakeitimų.
+4. `git commit -m "[TYPE]: aiškus lietuviškas paaiškinimas"` (TYPE: ADD, UPDATE, FIX, REMOVE; jokių ilgų brūkšnių žinutėje).
+5. `git push origin <jo-šaka>`
+6. Atidaryk arba nurodyk Pull Request į `main` (`gh pr create` arba pateik nuorodą). Peržiūrėtojas patvirtina ir sujungia.
+7. Pranešk paprastai ir pasiūlyk tą užduotį pažymėti atlikta jo `komanda/nariai/<vardas>/uzduotys.md` faile.
 
 **Pasiimk iš kito nario šakos**
 1. `git fetch origin`

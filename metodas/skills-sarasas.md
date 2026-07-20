@@ -35,7 +35,7 @@ jis pats parenka tinkamą įgūdį pagal tavo prašymą.
 
 Įgūdžiai keliauja kartu su repo (yra `.claude/skills/`), todėl kai patrauki (clone) ar atnaujini
 (pull) bazę, gauni ir naujausius įgūdžius. Nauji įgūdžiai atsiranda čia, kai juos pridedam kartu su
-SiloTech.
+mentoriumi.
 
 ## Saugumas galioja visiems įgūdžiams
 

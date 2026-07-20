@@ -10,7 +10,11 @@ Paprastas testas prieš dedant failą į žinių bazę.
 
 1. **Žinios** (gyvena čia, bazėje). Keičiasi retai, agentas jas skaito kaip kontekstą: organizacijos aprašai, procesai, darbo taisyklės, žodynas, sistemų žemėlapiai. Klausimas: „ar agentas šitą skaito, kad suprastų, kaip pas mus viskas veikia?" Jei taip, vieta čia.
 2. **Šablonai** (gyvena čia, `sablonai/`). Dokumentų ruošiniai, iš kurių gimsta nauji dokumentai: sutarčių formos, pasiūlymai, laiškai, tvarkos. Agentas + šablonas + žodynas = paruoštas juodraštis per kelias minutes. Žr. `sablonai/README.md`.
-3. **Įrašai** (gyvena NE čia). Juos gamina procesas ir jų vis daugėja: sąskaitos, užsakymai, pasirašytos sutartys, susirašinėjimas, asmens duomenys. Jie priklauso tam skirtoms sistemoms (buhalterinė, CRM, dokumentų saugykla). Klausimas: „ar tokių failų atsiranda po kelis per savaitę ir juose yra konkrečių sandorių ar žmonių duomenys?" Jei taip, vieta sistemoje, ne bazėje.
+3. **Įrašai** (gyvena NE čia). Juos gamina procesas ir jų vis daugėja: sąskaitos, užsakymai,
+   pasirašytos sutartys, susirašinėjimas, asmens duomenys. Jie priklauso tam skirtoms sistemoms.
+   Tiekėjo ir kliento komunikacijos žurnalas bei juodraščiai saugomi tik tiekėjo HQ kanoniniame
+   kliento kelyje, ne šiame repo. Klausimas: „ar tokių failų atsiranda po kelis per savaitę ir juose
+   yra konkrečių sandorių ar žmonių duomenys?" Jei taip, vieta sistemoje, ne bazėje.
 
 ## Kodėl taip
 

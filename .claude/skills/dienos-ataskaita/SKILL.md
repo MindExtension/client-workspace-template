@@ -9,7 +9,9 @@ Tikslas: viena trumpa suvestinė, kas nauja ir kokia būsena, iš to, ką galima
 
 ## Ką daryti
 
-1. Skaityk tik leidžiamus šaltinius: šitą žinių bazę ir prijungtas skaitymo (read-only) sistemas. Jose nieko nekeisk ir netvarkyk.
+1. Skaityk tik leidžiamus šaltinius: šitą žinių bazę ir aiškiai patvirtintas skaitymo (read-only)
+   sistemas. Pašto, Slack, Teams, CRM, kitų komunikacijos kanalų ir tiekėjo HQ duomenų į šią
+   ataskaitą netrauk ir šiame repo nelogink.
 2. Surink tris dalykus: kas naujo dokumentuose, sistemų būseną ir, jei prieinama, aktyvumo statistiką.
 3. Paruošk suvestinę: nuo 5 iki 8 aiškių punktų, lietuviškai, be em brūkšnių.
 4. Įrašyk suvestinę į šitą bazę, į `observability/dienos-ataskaitos/YYYY-MM-DD.md`, ir įdėk į ją nuorodą [[matomumo-sluoksniai]], kad suvestinė prisijungtų prie tinklo.
@@ -18,4 +20,7 @@ Suvestinės įrašymas į šitą bazę yra dokumentavimas, ne rašymas į išori
 
 ## Ribos
 
-Tik skaitymas iš sistemų. Jokio rašymo į jas, jokio laiškų siuntimo, jokio trynimo. Jei ko nematai, sąžiningai pažymėk, kad duomenų nėra, neprasimanyk. Kilus abejonei, laikykis [[di-saugumo-taisykles|saugumo taisyklių]].
+Tik skaitymas iš leidžiamų ne komunikacijos sistemų. Jokio rašymo į jas, laiškų siuntimo ar
+trynimo. Jokio komunikacijos turinio, santraukos ar metaduomenų failo šiame repo. Jei ko nematai,
+sąžiningai pažymėk, kad duomenų nėra, neprasimanyk. Kilus abejonei, laikykis
+[[di-saugumo-taisykles|saugumo taisyklių]].

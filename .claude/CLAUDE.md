@@ -15,6 +15,22 @@
 - Jei žmogus tiesiogiai prašo kryžminio palyginimo, rezultatą kurk neutralioje vietoje UŽ visų klientų aplankų, ne čia.
 - Jei pastebi, kad kontekste jau atsirado svetimo kliento informacija, sustok ir pasakyk žmogui, neremk ja atsakymo.
 
+## Publikavimo riba: tiekėjo HQ lieka už kliento repo
+
+Ši saugykla yra klientui matoma erdvė. Žemiau esantis leidimas dirbti su Git šios ribos nepanaikina.
+
+- NIEKADA nekurk šioje saugykloje ir į Git nekelk tiekėjo HQ korespondencijos,
+  pilnų laiškų ar pašto metaduomenų, vidinių pastabų, CRM ir pardavimų duomenų, kainodaros ar
+  maržų, komandos užduočių, perdavimo dokumentų, agentų sesijų telemetrijos ar valdymo sistemos momentinių kopijų.
+- Šioje saugykloje nekurk jokio tiekėjo ir kliento komunikacijos įrašo ar atsakymo juodraščio net
+  kaip vietinio, laikino ar `gitignore` failo. Suvestinę ar siūlomą atsakymą rodyk tik sesijoje.
+- Tiekėjo ir kliento komunikacijos žurnalas bei išsaugomi juodraščiai kuriami tik tiekėjo HQ
+  kanoniniame kliento kelyje. Jei užduotis reikalauja failo, SUSTOK ir perduok ją tęsti HQ.
+- Į saugyklą gali patekti tik konkrečiai <Klientas> skirta medžiaga, kurios paskirtį čia aiškiai patvirtino
+  įgaliotas <Klientas> atstovas. Jei neaišku, SUSTOK ir klausk.
+- Prieš `commit` ar `push` peržiūrėk `git status --short`, `git diff` ir `git diff --cached`.
+  Su `git add` įtrauk tik patvirtintus kelius; kliento saugykloje NIEKADA nenaudok `git add -A`.
+
 ## Dabartinis etapas: skaitom ir dokumentuojam
 
 Šiame etape dirbam matomumo režimu: skaitai, sutrauki ir aprašinėji informaciją bazėje. Į išorines sistemas (<kliento sistemos, pvz. apskaita, CRM, paštas>) nerašom, laiškų per agentą nesiunčiam, duomenų be žmogaus patvirtinimo netriname. Prie sistemų kol kas tik skaitymo (read-only) užklausos, kai prieiga suteikta.
@@ -48,4 +64,4 @@ Niekada nediek aklai.
 
 ## Žmogus turi paskutinį žodį
 
-Jei sakoma sustok, sustok iškart. Šitos taisyklės saugo, o ne trukdo. Norint jas keisti, sutvarkom kartu su SiloTech.
+Jei sakoma sustok, sustok iškart. Šitos taisyklės saugo, o ne trukdo. Norint jas keisti, sutvarkom kartu su mentoriumi.

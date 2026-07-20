@@ -15,6 +15,7 @@ metodas/skills-sarasas.md   mokymo dokumentas nariams: ką kuris įgūdis daro i
 diegimas/prezentaciju-irankiai.md   prezentacijų įrankių diegimo instrukcija
 silotech-programa/prezentacijos/kontekstas-sablonas.md   prezentacijos konteksto šablonas
 .claude/CLAUDE.md        bazės apsaugų šablonas (saugi zona, draudimai, konteksto izoliacija)
+AGENTS.md                 agentų publikavimo riba: jei neaišku, nieko nekelti
 metodas/kas-kur-gyvena.md   doktrina: žinios ir šablonai gyvena bazėje, įrašai (sąskaitos, pasirašytos sutartys) sistemose
 sablonai/README.md       šablonų aplanko griaučiai: kas tinka, kas ne, kaip pradėti
 ```
@@ -31,7 +32,8 @@ atnaujinti ir čia.
    Bazinis rinkinys ankstyvam etapui: `lt-gramatika`, `refine`, `cleanup-workspace`, `tiesos-linteris`,
    `prezentacijos`. Kai atsiranda git darbas šakomis: `git-paprastai`, `atlikta`. Pagal poreikį:
    `dienos-ataskaita`, `lt-verslo-teise`, `wispr-dict-trainer`.
-2. Pakeisk `<Klientas>` žymes: `prezentacijos/references/firminis-stilius.md` ir `.claude/CLAUDE.md`.
+2. Pakeisk `<Klientas>` žymes: `prezentacijos/references/firminis-stilius.md`, `.claude/CLAUDE.md`
+   ir `AGENTS.md`. Abu agentų taisyklių failai privalo likti kliento repo.
 3. Užpildyk `firminis-stilius.md` pagal kliento logotipą, svetainę ir brandbook (instrukcija failo viršuje).
    Įrašyk firmines spalvas į `prezentacijos/templates/base.html` tailwind.config bloką.
 4. `git-paprastai` ir `atlikta`: sutikrink, kad kliento repo turi asmenines šakas vardais ir
@@ -45,8 +47,10 @@ atnaujinti ir čia.
 7a. Nukopijuok `metodas/kas-kur-gyvena.md` ir `sablonai/` (README pritaikyk kliento procesams,
    pvz. įrašyk jo sistemas ir pirmo greito laimėjimo srautą). Šablonų surinkimas = geras ankstyvos
    sesijos namų darbas: klientas sudeda po vieną švarų kiekvieno tipo dokumentą, agentas nuasmenina.
-8. Prieš push į kliento repo: patikrink, ar niekur neliko kitų klientų vardų ar pavyzdžių
-   (`grep -ri` per įdėtus failus). Kliento repo gali turėti savo leak-guard kabliuką, jis tave
+8. Prieš push į kliento repo: patikrink, ar niekur neliko kitų klientų vardų, tiekėjo HQ
+   korespondencijos, pašto metaduomenų, vidinių pastabų, CRM/taskų ar kitų nepatvirtintų artefaktų
+   (`grep -ri` per įdėtus failus). Su `git add` įtrauk tik konkrečius diegimo kelius, niekada `git add -A`,
+   tada peržiūrėk visą staged diff. Kliento repo gali turėti savo leak-guard kabliuką, jis tave
    pagaus, bet nesikliaujam vien juo.
 
 ## Priežiūra (abipusis srautas)
@@ -59,6 +63,6 @@ atnaujinti ir čia.
 ## Kandidatai ateičiai
 
 Dedam tik kai atsiranda realus poreikis, ir tik generinius:
-- pašto apžvalga (inbox digest nariui)
+- pašto apžvalga tik sesijoje, nekuriant komunikacijos failų kliento repo
 - failų traukimas iš Drive ar kitų šaltinių
 - `autonomous-loop` ir `launch-readiness` (yra viešame `silotech-skills` repo)
