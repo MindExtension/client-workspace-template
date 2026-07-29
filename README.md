@@ -14,8 +14,7 @@ kita kliento informacija. Pavyzdžiai tik anonimizuoti.
 metodas/skills-sarasas.md   mokymo dokumentas nariams: ką kuris įgūdis daro ir kaip paprašyti
 diegimas/prezentaciju-irankiai.md   prezentacijų įrankių diegimo instrukcija
 silotech-programa/prezentacijos/kontekstas-sablonas.md   prezentacijos konteksto šablonas
-.claude/CLAUDE.md        bazės apsaugų šablonas (saugi zona, draudimai, konteksto izoliacija)
-AGENTS.md                 agentų publikavimo riba: jei neaišku, nieko nekelti
+.claude/CLAUDE.md        agentų taisyklių VIENINTELIS šaltinis (saugi zona, draudimai, konteksto izoliacija, publikavimo riba)
 metodas/kas-kur-gyvena.md   doktrina: žinios ir šablonai gyvena bazėje, įrašai (sąskaitos, pasirašytos sutartys) sistemose
 sablonai/README.md       šablonų aplanko griaučiai: kas tinka, kas ne, kaip pradėti
 ```
@@ -32,8 +31,8 @@ atnaujinti ir čia.
    Bazinis rinkinys ankstyvam etapui: `lt-gramatika`, `refine`, `cleanup-workspace`, `tiesos-linteris`,
    `prezentacijos`. Kai atsiranda git darbas šakomis: `git-paprastai`, `atlikta`. Pagal poreikį:
    `dienos-ataskaita`, `lt-verslo-teise`, `wispr-dict-trainer`.
-2. Pakeisk `<Klientas>` žymes: `prezentacijos/references/firminis-stilius.md`, `.claude/CLAUDE.md`
-   ir `AGENTS.md`. Abu agentų taisyklių failai privalo likti kliento repo.
+2. Pakeisk `<Klientas>` žymes: `prezentacijos/references/firminis-stilius.md` ir `.claude/CLAUDE.md`.
+   Agentų taisyklės laikomos TIK `.claude/CLAUDE.md` (vienintelis šaltinis, ne `AGENTS.md`). Šis failas privalo likti kliento repo.
 3. Užpildyk `firminis-stilius.md` pagal kliento logotipą, svetainę ir brandbook (instrukcija failo viršuje).
    Įrašyk firmines spalvas į `prezentacijos/templates/base.html` tailwind.config bloką.
 4. `git-paprastai` ir `atlikta`: sutikrink, kad kliento repo turi asmenines šakas vardais ir

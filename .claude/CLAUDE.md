@@ -26,6 +26,8 @@
   kaip vietinio, laikino ar `gitignore` failo. Suvestinę ar siūlomą atsakymą rodyk tik sesijoje.
 - Tiekėjo ir kliento komunikacijos žurnalas bei išsaugomi juodraščiai kuriami tik tiekėjo HQ
   kanoniniame kliento kelyje. Jei užduotis reikalauja failo, SUSTOK ir perduok ją tęsti HQ.
+- Čia nelaikyk tiekėjo ir kliento susitikimo įrašo, pilno transkripto, protokolo ar iš jo išvestų
+  tiekėjo vidinių užduočių. Kliento vidinis susitikimas be tiekėjo dalyvių nėra ši išimtis.
 - Į saugyklą gali patekti tik konkrečiai <Klientas> skirta medžiaga, kurios paskirtį čia aiškiai patvirtino
   įgaliotas <Klientas> atstovas. Jei neaišku, SUSTOK ir klausk.
 - Prieš `commit` ar `push` peržiūrėk `git status --short`, `git diff` ir `git diff --cached`.
