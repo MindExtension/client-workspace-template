@@ -51,6 +51,8 @@ atnaujinti ir čia.
    (`grep -ri` per įdėtus failus). Su `git add` įtrauk tik konkrečius diegimo kelius, niekada `git add -A`,
    tada peržiūrėk visą staged diff. Kliento repo gali turėti savo leak-guard kabliuką, jis tave
    pagaus, bet nesikliaujam vien juo.
+9. Šiame šaltinio repo paleisk `bash scripts/check-template.sh`. Patikra turi patvirtinti, kad
+   vienintelis agento taisyklių ir įgūdžių paviršius yra `.claude/`.
 
 ## Priežiūra (abipusis srautas)
 

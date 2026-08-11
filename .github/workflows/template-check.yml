@@ -1,0 +1,14 @@
+name: Kliento darbo erdvės šablono patikra
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tikrinti Claude Code struktūrą
+        run: bash scripts/check-template.sh
