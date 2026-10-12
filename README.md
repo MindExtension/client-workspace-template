@@ -19,7 +19,7 @@ metodas/kas-kur-gyvena.md   doktrina: žinios ir šablonai gyvena bazėje, įra�
 sablonai/README.md       šablonų aplanko griaučiai: kas tinka, kas ne, kaip pradėti
 ```
 
-Įgūdžiai: `git-paprastai`, `atlikta`, `dienos-ataskaita`, `cleanup-workspace`, `tiesos-linteris`,
+Įgūdžiai: `git-paprastai` (su šakų būsenos skriptu ir žemėlapiu), `atlikta`, `dienos-ataskaita`, `cleanup-workspace`, `tiesos-linteris`,
 `lt-gramatika`, `lt-verslo-teise`, `prezentacijos`, `refine`, `wispr-dict-trainer`.
 
 Pastaba dėl `refine`: jo tiesos šaltinis yra viešas `silotech-skills` repo. Atnaujinus ten,
@@ -35,8 +35,13 @@ atnaujinti ir čia.
    Agentų taisyklės laikomos TIK `.claude/CLAUDE.md` (vienintelis šaltinis, ne `AGENTS.md`). Šis failas privalo likti kliento repo.
 3. Užpildyk `firminis-stilius.md` pagal kliento logotipą, svetainę ir brandbook (instrukcija failo viršuje).
    Įrašyk firmines spalvas į `prezentacijos/templates/base.html` tailwind.config bloką.
-4. `git-paprastai` ir `atlikta`: sutikrink, kad kliento repo turi asmenines šakas vardais ir
-   `komanda/nariai/<vardas>/uzduotys.md` struktūrą; įrašyk, kas yra peržiūrėtojas.
+4. `git-paprastai` ir `atlikta`: nukopijuok kartu `metodas/sakos-ir-sujungimas.md`,
+   `metodas/dalinimasis-su-komanda.md`, `metodas/dalinimosi-pratimas.md`, `metodas/praktika/` ir
+   `.claude/settings.json` (šakų būsena sesijos pradžioje, git leidimai be perteklinių klausimų).
+   Jei kliento repo jau turi `.claude/settings.json`, sujunk raktus, neperrašyk. Užpildyk žemėlapį:
+   žmonės, GitHub vardai (`gh api repos/<savininkas>/<repo>/collaborators`), asmeninės šakos, kas
+   sujungia į `main` ir kur žymimos užduotys. Paleisk `bash .claude/skills/git-paprastai/scripts/sakos-busena.sh`
+   ir įsitikink, kad dabartinė šaka atpažįstama.
 5. `lt-verslo-teise`: pritaikyk kliento sektoriui `references/es-teise.md` 4 skyrių IR SKILL.md
    (aprašo pavyzdžius bei ES aktų lentelę, ten yra [pritaikyk diegiant] žymė).
 6. Nukopijuok `metodas/skills-sarasas.md` į kliento bazę, palik tik įdiegtus įgūdžius, ištrink
