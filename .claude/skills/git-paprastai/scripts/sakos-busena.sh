@@ -29,12 +29,13 @@ isvalyk() { printf '%s' "$1" | sed -e 's/`//g' -e 's/^[[:space:]]*//' -e 's/[[:s
 
 mazosiomis() { printf '%s' "$1" | tr '[:upper:]' '[:lower:]'; }
 
-# Kas dirba šakoje pagal žemėlapį: tikslus šakos vardas, o temos šakai `vardas-tema-data` pirma dalis.
+# Kas dirba šakoje pagal žemėlapį: tikslus šakos vardas, o temos šakai `vardas-tema` ar `vardas/tema` pirma dalis.
 zmogus_pagal_saka() {
   [ -f "$ZEMELAPIS" ] || return 0
   local tiksli pirma
   tiksli=$(mazosiomis "$1")
   pirma=${tiksli%%-*}
+  pirma=${pirma%%/*}
   grep -E '^\|' "$ZEMELAPIS" | while IFS='|' read -r _ zmogus github saka _; do
     s=$(mazosiomis "$(isvalyk "$saka")")
     [ -z "$s" ] && continue
@@ -84,8 +85,8 @@ fi
 echo
 echo "Šakos GitHub'e (naujausios viršuje, „nesujungta“ = pakeitimai, kurių main dar neturi):"
 git for-each-ref --sort=-committerdate --count=10 refs/remotes/origin \
-  --format='%(refname:short)|%(committerdate:short)|%(authorname)|%(subject)' 2>/dev/null |
-while IFS='|' read -r ref data autorius tema; do
+  --format='%(refname:short)%1f%(committerdate:short)%1f%(authorname)%1f%(subject)' 2>/dev/null |
+while IFS=$'\x1f' read -r ref data autorius tema; do
   case "$ref" in origin/HEAD|origin) continue ;; esac
   vardas=${ref#origin/}
   zyme=""
