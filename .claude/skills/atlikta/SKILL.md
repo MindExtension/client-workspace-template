@@ -18,7 +18,7 @@ Skirta komandos nariams. Tikslas: vienas ritualas, kad kiekviena užduotis gaut�
 
 ## Kaip veikia
 
-1. **Nustatyk, kas narys.** `git branch --show-current` duoda šaką, ji yra nario vardas (pvz. `Vardas`). Nario aplankas `komanda/nariai/` viduje prasideda tuo pačiu vardu (pvz. šaka `Vardas` -> aplankas `vardas-pavarde`). Jei pagal vardą tinka daugiau nei vienas aplankas arba nė vienas, paklausk žmogaus, nespėk.
+1. **Nustatyk, kas narys.** Paleisk `bash .claude/skills/git-paprastai/scripts/sakos-busena.sh`: jis parodo šaką ir žmogų pagal `metodas/sakos-ir-sujungimas.md`. Užduočių failas nurodytas to žemėlapio skyriuje „Kur žymimos užduotys“ (pvz. `komanda/nariai/<vardas>/uzduotys.md`, aplankas prasideda nario vardu). Jei žmogus neatpažintas arba tinka daugiau nei vienas aplankas, paklausk, nespėk.
 2. **Parodyk atviras užduotis.** Perskaityk to nario `uzduotys.md` ir išvardink visus atvirus `[ ]` punktus iš „Vykdoma / atviros užduotys" ir iš „Bendra programa (pamokos)". Sunumeruok.
 3. **Paklausk, kurią patvirtina.** Narys pasako numerį ar kelis. Žymim TIK tai, ką jis aiškiai patvirtina, nieko nespėliojam.
 4. **Patikrink prieš uždarydamas (logikos peržiūra).** Kiekvienai patvirtintai užduočiai, prieš dedant žymę:

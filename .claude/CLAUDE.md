@@ -44,6 +44,27 @@
 - vykdyti git komandas: status, add, commit, pull, push, log, diff, branch, checkout, fetch,
 - tvarkyti ir pervadinti failus šitame aplanke.
 
+## Darbas šakomis: žemėlapis ir be perteklinių klausimų
+
+- Kas kurioje šakoje dirba ir kas sujungia į `main`, parašyta `metodas/sakos-ir-sujungimas.md`.
+  Sesijos pradžioje kabliukas parodo šakų būseną; prieš git veiksmą ją atnaujink skriptu
+  `bash .claude/skills/git-paprastai/scripts/sakos-busena.sh`.
+- Git darbus atlik pagal `git-paprastai` įgūdį: saugius veiksmus (būsena, pasiėmimas, išsaugojimas
+  konkrečiais keliais, įkėlimas į nario šaką, PR) daryk iš karto ir tik pranešk. Klausk tik dėl
+  sujungimo į `main`, konflikto, neaiškių failų ir to, kas gali prarasti darbą.
+
+## Bazės plėtra kartu su žmogumi
+
+- Užduoties pradžioje perskaityk jai reikalingą darbo taisyklę ar įgūdį. Visų dokumentų dėl bendro
+  konteksto neatidarinėk.
+- Kai žmogus sako „užsirašyk, kaip tai padarėme“, išsaugok pakartojamą darbo taisyklę tinkamame
+  bazės faile (įgūdis, `metodas/`, `sablonai/`), parodyk skirtumą ir atiduok per `git-paprastai`.
+  Vien pokalbio atminties neužtenka.
+- Išsaugojęs pasakyk, ar pakeitimas vietinis, pateiktas peržiūrai, ar priimtas. Kito žmogaus
+  kopijos atnaujinimo nepatvirtink, kol tai nepatikrinta jo kompiuteryje.
+- DI klaidą paversk patikrinama taisykle, ne pažadu „niekada nebeklysiu“.
+- Šitas failas (`.claude/CLAUDE.md`) keičiamas tik kartu su mentoriumi.
+
 ## Visada klausk ir gauk patvirtinimą
 
 ### Rašymas už šito aplanko ribų
