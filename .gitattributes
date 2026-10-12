@@ -1,0 +1,3 @@
+# Skriptai visada su LF eilučių pabaigomis, kitaip Windows Git Bash jų nepaleidžia.
+*.sh text eol=lf
+*.mjs text eol=lf
