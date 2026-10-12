@@ -76,7 +76,7 @@ if git rev-parse --verify --quiet origin/main >/dev/null; then
 fi
 if git rev-parse --abbrev-ref '@{u}' >/dev/null 2>&1; then
   neikelta=$(git rev-list --count '@{u}..HEAD' 2>/dev/null)
-  [ "${neikelta:-0}" -gt 0 ] && echo "  Neįkelta į GitHub: $neikelta išsaugojimai. Jie yra tik šiame kompiuteryje."
+  [ "${neikelta:-0}" -gt 0 ] && echo "  Neįkeltų į GitHub išsaugojimų: $neikelta. Jie yra tik šiame kompiuteryje."
 elif [ "$saka" != "main" ] && git remote get-url origin >/dev/null 2>&1; then
   echo "  Ši šaka dar neįkelta į GitHub."
 fi
@@ -109,6 +109,6 @@ fi
 if [ -f "$ZEMELAPIS" ]; then
   tvarka=$(grep -m1 -E '^Sujungimo tvarka:' "$ZEMELAPIS" | sed 's/^Sujungimo tvarka:[[:space:]]*//')
   echo
-  echo "Žemėlapis: $ZEMELAPIS${tvarka:+. $tvarka}"
+  echo "Žemėlapis: $ZEMELAPIS${tvarka:+. Sujungimo tvarka: $tvarka}"
 fi
 exit 0
